@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nexus</title>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="profile-card" >
+        <div class="profile-image"> </div>
+        <h2 >Nexus</h2>
+        <h4>حساباتنا</h4>
+        <button><a href="https://www.linkedin.com/company/psnexus/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></button>
+        <button><a href="https://www.instagram.com/ps.nexus/"><i class="fab fa-instagram" target="_blank"></i>Instagram</a></button>
+        <button><a href="https://www.facebook.com/profile.php?id=61562278450895" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></button>
+        <button><a href="https://t.me/nexuspal" target="_blank"><i class="fab fa-telegram"></i>Telegram</a></button>
+        <!-- <button><a href="https://www.linkedin.com/company/psnexus/?viewAsMember=true">LinkedIn</a></button>
+        <button><a href="https://www.instagram.com/ps.nexus/">Instegram</a></button>
+        <button><a href="https://www.facebook.com/profile.php?id=61562278450895">Facebook</a></button>
+        <button><a href="https://t.me/nexuspal">Telegram</a></button> -->
+        
+    </div>
+
+    <script>
+        // تطبيق تأثير عند مرور الماوس على الأزرار
+        const buttons = document.querySelectorAll('button');
+
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.style.backgroundColor = '#f0f0f0'; // تغيير لون الخلفية عند مرور الماوس
+                button.style.transform = 'scale(1.05)'; // تكبير الحجم قليلاً
+            });
+
+            button.addEventListener('mouseout', () => {
+                button.style.backgroundColor = 'white'; // استعادة لون الخلفية الأصلي
+                button.style.transform = 'scale(1)'; // استعادة الحجم الأصلي
+            });
+        });
+    </script>
+
+</body>
+
+
+
+
+
+
+
+
+</html>
